@@ -57,7 +57,7 @@
             <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
             <div class="activity-card" id="activity-0">
                 <h2><span class="book-icon">📝</span> De un Vistazo: Sesión 5 ¿Qué es la Visión por Computadora?</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador. <strong>Nota: Esta sesión tiene dos variantes.</strong></p>
                 <div class="overview-table-container">
                     <table>
                         <thead>
@@ -72,7 +72,7 @@
                                     <strong>Objetivos de Aprendizaje:</strong>
                                     <ul>
                                         <li>Misión / Tema Principal: ¿Qué es la Visión por Computadora?</li>
-                                        <li>Objetivo General de la Sesión: Que los estudiantes comprendan conceptualmente qué es la Visión por Computadora a través de una actividad unplugged y se familiaricen con la idea de que podemos darle a nuestro programa en Pictoblox la habilidad de "ver" el mundo real a través de la cámara.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes comprendan conceptualmente qué es la Visión por Computadora y se familiaricen con la idea de que podemos darle a nuestro programa en Pictoblox la habilidad de "ver" el mundo real, ya sea a través de la cámara en vivo o analizando una imagen fija.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
@@ -82,9 +82,10 @@
                                         <li>⚡ Del Suelo a la Pantalla</li>
                                         <li>⚡ Círculo de Creación</li>
                                     </ul>
-                                    <strong>Entregable Clave:</strong>
+                                    <strong>Entregable Clave (elegir según el aula):</strong>
                                     <ul>
-                                        <li>Un programa funcional en Pictoblox que carga la extensión "Object Detection" y utiliza el bloque `turn on video` para mostrar la imagen de la cámara web del estudiante en el escenario del programa.</li>
+                                        <li><strong><i class="fas fa-video"></i> Opción A (Con Cámara):</strong> Un programa funcional que carga la extensión "Object Detection" y utiliza el bloque `turn on video` para mostrar la imagen de la cámara web en el escenario.</li>
+                                        <li><strong><i class="fas fa-image"></i> Opción B (Sin Cámara):</strong> Un programa funcional que carga la extensión "Object Detection", usa una imagen como fondo y utiliza el bloque de análisis para identificar los objetos en ella.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -92,7 +93,7 @@
                                     <ul>
                                         <li>Proyector</li>
                                         <li>Computadoras o tabletas con Pictoblox</li>
-                                        <li>Una serie de imágenes complejas y variadas (impresas o digitales, ej: una foto de una cocina, un paisaje de playa con gente, una escena de un mercado, un dibujo lleno de animales).</li>
+                                        <li>Una serie de imágenes complejas y variadas (impresas para la actividad unplugged, y en archivos JPG/PNG para la Opción B).</li>
                                          <li>Presentación de la sesión (10 diapositivas)</li>
                                     </ul>
                                     <strong>Preparación Previa:</strong>
@@ -100,12 +101,12 @@
                                         <li><strong>Revisión de Misión (Interna):</strong>
                                             <ul>
                                                 <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (Pictoblox).</li>
-                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Confirmar acceso y funcionamiento de Pictoblox.</li>
+                                                <li>Tener la presentación lista y en orden.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
-                                        <li><strong>Preparación de Materiales:</strong> Tener listas y a la mano las imágenes complejas (impresas o digitales) para la actividad "¿Qué ves?".</li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión y decidir si se usará la Opción A o B.</li>
+                                        <li><strong>Preparación de Materiales:</strong> Tener listas las imágenes. Para la Opción B, asegurarse de que los archivos de imagen estén en una carpeta de fácil acceso.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -128,19 +129,22 @@
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant">"¡Hola, super-detectives! Ya sabemos programar a nuestros personajes para que se muevan, reaccionen a nuestros clics y hasta lleven la cuenta de puntos. Pero todos nuestros programas viven DENTRO de la computadora."</p>
-                                <p class="dialogue assistant">(Plantea una pregunta intrigante) "¿No sería increíble si nuestro personaje de Pictoblox pudiera ver AFUERA de la pantalla? ¿Si pudiera vernos a nosotros, o ver los objetos que tenemos en el salón?"</p>
+                                <p class="dialogue assistant">(Plantea una pregunta intrigante. Elige la que se ajuste a tu clase):</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-video"></i> Opción A (Con Cámara):</strong> "¿No sería increíble si nuestro personaje de Pictoblox pudiera ver AFUERA de la pantalla? ¿Si pudiera vernos a nosotros, o ver los objetos que tenemos en el salón?"</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-image"></i> Opción B (Sin Cámara):</strong> "¿No sería increíble si nuestro personaje de Pictoblox pudiera ver una foto del mundo real? ¿Si pudiera mirar la foto de una cocina y decirnos dónde está la manzana?"</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Establecer la "Vibe" del Día ⏰ 2.5 minutos</h3>
-                            <p>Declara la "vibe" de la sesión ("Vamos a darle a nuestro programa el superpoder de la vista") y lanza el llamado a la acción para la misión.</p>
+                            <p>Declara la "vibe" de la sesión y lanza el llamado a la acción para la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Hoy, nuestra 'vibe' es: 'Vamos a darle a nuestro programa el superpoder de la vista'."</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-video"></i> Opción A (Con Cámara):</strong> "Hoy, nuestra 'vibe' es: 'Vamos a darle a nuestro programa el superpoder de la vista'."</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-image"></i> Opción B (Sin Cámara):</strong> "Hoy, nuestra 'vibe' es: 'Vamos a convertir nuestro programa en un súper detective con vista de águila'."</p>
                             </div>
                         </div>
                     </div>
@@ -226,20 +230,20 @@
                 </div>
             </div>
 
+
             <div class="activity-card" id="activity-4">
                  <h2>⚡ Actividad 4: Del Suelo a la Pantalla (Introducción a los Bloques en Pictoblox) ⏰ 10 minutos</h2>
                 <p>Guiar a los estudiantes en la implementación práctica del plan en la plataforma de programación, siguiendo un modelo paso a paso.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Cargar la Extensión ⏰ 5 minutos</h3>
+                            <h3>Paso 1: Cargar la Extensión (Común para ambas opciones) ⏰ 5 minutos</h3>
                             <p>(Proyectar Diapositiva 7) Guía a los estudiantes para que encuentren el botón de Extensiones en Pictoblox y carguen la extensión "Detección de Objetos", observando los nuevos bloques que aparecen.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant">"¡Ahora el momento que todos esperaban! Vamos a llevar este superpoder <strong>del suelo a la pantalla</strong>. ¡Abran Pictoblox!"</p>
-                                <p class="dialogue assistant">"En Pictoblox, podemos darle este superpoder a nuestros programas. ¡Pero no viene solo, tenemos que pedirlo!"</p>
                                 <p class="dialogue assistant">"Para activar la Visión por Computadora, vamos a la esquina inferior y hacemos clic en el botón de Extensiones." (El profesor muestra dónde está).</p>
                                 <p class="dialogue assistant">"Buscamos la extensión que se llama 'Detección de Objetos' (Object Detection) y hacemos clic en ella. ¡Miren! Acaban de aparecer nuevos bloques de color especial en nuestra paleta. ¡Son los bloques de nuestro superpoder!"</p>
                             </div>
@@ -247,14 +251,21 @@
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Activar la Cámara ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Muestra cómo usar el bloque `turn on video` para encender los "ojos" del programa. Guía a los alumnos para que lo prueben y se vean en el escenario.</p>
+                            <h3>Paso 2: Darle "Ojos" al Programa (Elegir una opción) ⏰ 5 minutos</h3>
+                            <p>A partir de aquí, la misión se divide en dos caminos, dependiendo del equipo que tengamos en el salón. <strong>¡Elige la opción que corresponda!</strong></p>
                         </div>
                         <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <button type="button" class="collapsible-button">Diálogos Sugeridos (Opción A y B)</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">"Ahora que tenemos los bloques, lo primero es encender los 'ojos' de nuestro programa. Usaremos el bloque turn on video on stage. Esto activará nuestra cámara web."</p>
-                                 <p class="dialogue assistant">(Acción) "Sigan mis pasos: carguen la extensión, arrastren el evento de bandera verde y conecten el bloque `turn on video`. ¡Ejecútenlo y vean su propia imagen en el escenario!"</p>
+                                 <h4><i class="fas fa-video"></i> Opción A: Activar la Cámara</h4>
+                                 <p class="dialogue assistant">"Ahora que tenemos los bloques, lo primero es encender los 'ojos' de nuestro programa. Usaremos el bloque `turn on video on stage`. Esto activará nuestra cámara web."</p>
+                                 <p class="dialogue assistant">(Acción) "Sigan mis pasos: arrastren el evento de bandera verde y conecten el bloque `turn on video`. ¡Ejecútenlo y vean su propia imagen en el escenario!"</p>
+                                 <hr>
+                                 <h4><i class="fas fa-image"></i> Opción B: Analizar una Imagen</h4>
+                                 <p class="dialogue assistant">"Ahora que tenemos los bloques, vamos a darle a nuestro programa una imagen para que la investigue, como un verdadero detective."</p>
+                                 <p class="dialogue assistant">(Acción) "Sigan mis pasos: Primero, vamos a cambiar el fondo. Hagan clic en el Escenario, luego en la pestaña 'Fondos' y usen el botón para 'Cargar un fondo' desde un archivo."</p>
+                                 <p class="dialogue assistant">"Seleccionen la imagen de la 'cocina' o la 'playa'. ¡Ahora esa imagen es nuestro escenario!"</p>
+                                 <p class="dialogue assistant">"Finalmente, arrastren el evento de bandera verde y conecten el bloque `analizar imagen del escenario`. ¡Ejecútenlo y miren cómo la computadora dibuja cajas alrededor de los objetos que reconoce en la foto!"</p>
                             </div>
                         </div>
                     </div>
@@ -268,25 +279,29 @@
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 1: Celebración y Reflexión ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Felicita a los estudiantes por darle "ojos" a su programa y refuerza el logro del primer paso en el uso de la Visión por Computadora.</p>
+                            <p>(Proyectar Diapositiva 9) Felicita a los estudiantes por su logro y refuerza el primer paso en el uso de la Visión por Computadora.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"¡Genial! ¡Todos se están viendo en la pantalla! Para terminar nuestra misión, nos reunimos en nuestro <strong>círculo de creación</strong>."</p>
-                                <p class="dialogue assistant">"¡Felicidades! Le han dado 'ojos' a su programa. Hoy descubrimos qué es la Visión por Computadora y cómo podemos activarla en Pictoblox. Hemos dado el primer paso."</p>
+                                <p class="dialogue assistant">"¡Increíble trabajo, equipo! Para terminar nuestra misión, nos reunimos en nuestro <strong>círculo de creación</strong>."</p>
+                                <p class="dialogue assistant">(Elige la reflexión que corresponda al trabajo realizado):</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-video"></i> Opción A (Con Cámara):</strong> "¡Felicidades! Le han dado 'ojos' a su programa. Hoy descubrimos qué es la Visión por Computadora y cómo podemos activarla en Pictoblox para vernos en tiempo real. ¡Hemos dado el primer paso!"</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-image"></i> Opción B (Sin Cámara):</strong> "¡Felicidades! Han convertido su programa en un detective experto. Hoy descubrimos qué es la Visión por Computadora y cómo podemos usarla para analizar una foto. ¡Hemos dado el primer paso!"</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Conexión con la Próxima Misión ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Genera expectativa para la siguiente clase, adelantando que el programa no solo verá, sino que analizará y reaccionará a lo que ve.</p>
+                            <p>(Proyectar Diapositiva 10) Genera expectativa para la siguiente clase, adelantando que el programa reaccionará a lo que ve.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"En la próxima clase, no solo encenderemos la cámara, sino que le pediremos al programa que analice lo que ve y reaccione. ¡Prepárense para que sus programas empiecen a entender el mundo real!”"</p>
+                                 <p class="dialogue assistant">(Elige la conexión que corresponda):</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-video"></i> Opción A (Con Cámara):</strong> "En la próxima clase, no solo encenderemos la cámara, sino que le pediremos al programa que analice lo que ve EN VIVO y reaccione. ¡Imaginen que el personaje salte cada vez que nos vea levantar la mano!"</p>
+                                <p class="dialogue assistant"><strong><i class="fas fa-image"></i> Opción B (Sin Cámara):</strong> "En la próxima clase, no solo le pediremos al programa que encuentre objetos, sino que reaccione cuando los encuentre. ¿Se imaginan hacer un juego donde ganemos puntos por cada banana que el programa encuentre en la foto? ¡Prepárense para que sus programas empiecen a interactuar con el mundo real!”"</p>
                             </div>
                         </div>
                     </div>
